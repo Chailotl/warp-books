@@ -1,7 +1,7 @@
 name: WarpBooks
 description: End-game warp items!
-author: Raus
-main: com.raus.warpBooks.Main
+author: Chai
+main: com.chai.warpBooks.Main
 version: 1.0
 api-version: 1.15
 

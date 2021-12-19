@@ -1,4 +1,4 @@
-package com.raus.warpBooks;
+package com.chai.warpBooks;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.raus.shortUtils.ShortUtils;
+import com.chai.shortUtils.ShortUtils;
 
-public class RenameCommand implements CommandExecutor
+public class LoreCommand implements CommandExecutor
 {
 	private final Main plugin = JavaPlugin.getPlugin(Main.class);
 
@@ -32,15 +32,15 @@ public class RenameCommand implements CommandExecutor
 		if (ShortUtils.hasKey(meta, plugin.warpBannerKey))
 		{
 			// Modify
-			String name = String.join(" ", args);
-			meta.getPersistentDataContainer().set(plugin.nameKey, PersistentDataType.STRING, name);
+			String lore = String.join(" ", args);
+			meta.getPersistentDataContainer().set(plugin.loreKey, PersistentDataType.STRING, lore);
 
 			List<String> list = meta.getLore();
-			list.set(0, "§f" + name);
+			list.set(1, "§7" + lore);
 			meta.setLore(list);
 
 			item.setItemMeta(meta);
-			ply.sendMessage("§6Warp renamed to §c" + name);
+			ply.sendMessage("§6Warp description changed");
 		}
 		return true;
 	}

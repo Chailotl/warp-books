@@ -1,4 +1,4 @@
-package com.raus.warpBooks;
+package com.chai.warpBooks;
 
 import java.util.Arrays;
 
@@ -14,8 +14,8 @@ import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.raus.craftLib.CraftLib;
-import com.raus.shortUtils.ShortUtils;
+import com.chai.craftLib.CraftLib;
+import com.chai.shortUtils.ShortUtils;
 
 public class Main extends JavaPlugin
 {

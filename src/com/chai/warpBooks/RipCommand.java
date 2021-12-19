@@ -1,4 +1,4 @@
-package com.raus.warpBooks;
+package com.chai.warpBooks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.raus.shortUtils.ShortUtils;
+import com.chai.shortUtils.ShortUtils;
 
 public class RipCommand implements CommandExecutor
 {
